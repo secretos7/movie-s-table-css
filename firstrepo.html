@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1</title>
+</head>
+<body>
+    <style>
+      table{
+    border-collapse: collapse;
+    background-color: rgb(244, 241, 241);
+    width: 80%;
+    font-size: 15px;
+  }
+td:first-child {
+    text-align: right ;
+  }
+  td:not(:first-child) {
+    text-align: left;
+  }
+  tr:nth-of-type(even) {
+    background-color:cadetblue;
+  }
+  td,tr,th {
+    width: 80px;
+    height: 80px; 
+  }
+  .both:hover {
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+  }
+  .content {
+    padding: 20px;
+  }
+  footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  footer a {
+    color: cadetblue;
+    margin: 0 10px;
+  }
+    </style>
+    <table cellpadding="20">
+        <tr>
+            <th class="both">Films</th>
+            <th class="both">Release date </th>
+            <th class="both">Rating</th>
+        </tr>
+        <tr>
+            <td class="both">Inception</td>
+            <td class="both">2010</td>
+            <td class="both" rowspan="1">4.9</td>
+            </tr>
+            <tr>
+            <td class="both">Shutter Island</td>
+            <td class="both">2010</td>
+            <td class="both" rowspan="1">4.8</td>
+            </tr>
+            <tr>
+            <td class="both">Dune</td>
+            <td class="both">2021</td>
+            <td class="both" rowspan="1">4.7</td>
+            </tr>
+            <tr>
+            <td class="both">Forgotten</td>
+            <td class="both">2017</td>
+            <td class="both" rowspan="1">4.7</td>
+        </tr>
+    </table>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque euismod dolor vitae eros blandit, vel interdum ipsum fringilla. Vivamus eget libero nec erat fermentum ultrices et eu tortor. Integer posuere tincidunt nulla, vel molestie neque.</p>
+        <p>Donec euismod orci non erat lacinia ultricies. Aliquam erat volutpat. Integer scelerisque accumsan sem, in feugiat nisl. Ut convallis orci eu mauris tempus malesuada. Nulla facilisi. Suspendisse potenti. Sed facilisis metus sit amet sagittis ultrices.</p>
+      </div>
+      <footer>
+        <a href="#">Notre compte</a>
+        <a href="#">Notre page  </a>
+        <a href="#">L'endroit </a>
+        <a href="https://developer.mozilla.org/en-US/">Source</a>
+            </footer>
+</body>
+</html>
